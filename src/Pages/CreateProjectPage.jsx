@@ -31,6 +31,7 @@ function CreateProjectPage() {
     return (
         <div className="CreateProjectPage">
             <h3>Add Project </h3>
+            
             <form onSubmit={handleSubmit} >
                 <label> Title:
                     <input type="text"
