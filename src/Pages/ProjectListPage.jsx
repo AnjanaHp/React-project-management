@@ -11,8 +11,8 @@ function ProjectListPage() {
         axios.get(`${API_URL}/projects`)
 
             .then((response) => {
-                console.log(response.data);
-                setProjects(response.data);
+             const projectsArr =response.data.toReversed();
+                setProjects(projectsArr);
             })
             .catch(e => console.log("Error"));
 
@@ -30,7 +30,7 @@ function ProjectListPage() {
                     <div className="card" key={projectDetails.id}>
                         <h2>{projectDetails.title}  </h2>
 
-                        <p>  {projectDetails.description}  </p>
+                      {/*  <p>  {projectDetails.description}  </p> */}
                     </div>
                 )
 

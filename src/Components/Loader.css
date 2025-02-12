@@ -6,6 +6,7 @@
     --color: currentColor;
     --animation-timing-function: linear;
     --animation-duration: 1s;
+    margin: 0,auto;
     width: var(--size);
     height: var(--size);
     border-width: var(--stroke-width);
